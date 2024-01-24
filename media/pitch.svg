@@ -1,0 +1,14 @@
+<svg width="801" height="654" viewBox="0 0 801 654" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M401 51.3335V56.6668" stroke="white" stroke-width="4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M485 51.334C485 97.7259 447.392 135.334 401 135.334C354.608 135.334 317 97.7259 317 51.334C317 32.0022 323.53 14.1956 334.506 0H467.494C478.47 14.1956 485 32.0022 485 51.334ZM329.516 0H0V654H800V0H472.484C482.878 14.4485 489 32.1763 489 51.334C489 99.935 449.601 139.334 401 139.334C352.399 139.334 313 99.935 313 51.334C313 32.1763 319.122 14.4485 329.516 0Z" fill="#FDC500"/>
+<path d="M0 54L801 54.0005" stroke="white" stroke-width="4"/>
+<path d="M181 654V474" stroke="white" stroke-width="4"/>
+<path d="M181 476L618.999 474.999" stroke="white" stroke-width="4"/>
+<path d="M621 654V473" stroke="white" stroke-width="4"/>
+<circle cx="401" cy="534" r="2.5" fill="white" stroke="white"/>
+<path d="M503 654V594" stroke="white" stroke-width="4"/>
+<path d="M299 654V594" stroke="white" stroke-width="4"/>
+<path d="M301 596H501" stroke="white" stroke-width="4"/>
+<path d="M501 475C501 448.479 490.464 423.043 471.711 404.29C452.957 385.536 427.522 375 401 375C374.478 375 349.043 385.536 330.289 404.29C311.536 423.043 301 448.479 301 475L401 475H501Z" stroke="white" stroke-width="4"/>
+<circle cx="401" cy="54.0005" r="5" fill="white"/>
+</svg>

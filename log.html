@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фентезі УПЛ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="reg-container">
+        
+        <div class="left-container-reg">
+
+
+
+            <span class="hoower-text-main-reg">
+                <span class="hoower-text-reg">
+                    Вже маєте акаунт? 
+    
+                </span>
+                <a class="hoower-text-reg" href="/login">Увійти</a>
+            </span>   
+
+            <h1 >Реєстрація</h1>
+            <div class="form-div-reg">
+
+                <form action="" class="form-log-reg">
+                    <input id="log" placeholder="Логін" type="text">
+                    <br>
+                    <input id="mail" placeholder="Пошта" type="text">
+                    <br>
+                    <div class="password-container">
+                        <input id="paswd" placeholder="Пароль" type="password">
+
+                        <div id="show-password" onclick="togglePassword()">
+                            <img src="media/visibility.svg" alt="">
+                        </div>
+
+                    </div>
+                    
+                    <div class="password-container">
+                        <input id="paswd-conf" placeholder="Підтіердження паролю" type="password">
+
+                        <div id="show-password-conf" onclick="togglePasswordConf()">
+                            <img src="media/visibility.svg" alt="">
+                        </div>
+
+                    </div>
+                    
+                    <div>
+                        <select name="number" autofocus>
+                            <option disabled="disabled" selected="selected">Улюблена команда</option>
+                            <option value="1">Динамо Київ</option>
+                            <option value="2">Шахтар Донецьк</option>
+                            <option value="3">Зоря Луганськ</option>
+                            <option value="4">Десна Чернігів</option>
+                            <option value="5">Олександрія</option>
+                            <option value="6">Ворскла Полтава</option>
+                            <option value="7">Колос Ковалівка</option>
+                            <option value="8">Маріуполь</option>
+                            <option value="9">Рух Львів</option>
+                            <option value="10">Металіст 1925 Харків</option>
+                            <option value="11">Дніпро-1</option>
+                            <option value="12">Інгулець</option>
+                            <option value="13">Минай</option>
+                            <option value="14">Чорноморець</option>
+                            <option value="15">Говерла</option>
+                            <option value="16">Оболонь</option>
+                        </select>
+                    </div>
+                    
+                    
+                    
+                
+                    <button type="submit">Зареєструватися</button>
+                </form>
+                
+
+
+            </div>
+                
+    
+               
+            
+
+
+
+
+
+
+
+            
+
+        </div>
+        <div class="right-container-reg">
+            <div class="image-container-reg">
+                <img src="media/eDSC_0397 (1).png" alt="">
+
+            </div>
+            <div class="back_image-reg">
+                
+
+            </div>
+            
+        </div>
+
+    </div>
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("paswd");
+            var showPasswordButton = document.getElementById("show-password");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                showPasswordButton.innerHTML = '<img src="media/visibilityoff.svg" alt="Відкрите око">';
+            } else {
+                passwordField.type = "password";
+                showPasswordButton.innerHTML = '<img src="media/visibility.svg" alt="Закрите око">';
+            }
+        }
+        function togglePasswordConf() {
+            var passwordField = document.getElementById("paswd-conf");
+            var showPasswordButton = document.getElementById("show-password-conf");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                showPasswordButton.innerHTML = '<img src="media/visibilityoff.svg" alt="Відкрите око">';
+            } else {
+                passwordField.type = "password";
+                showPasswordButton.innerHTML = '<img src="media/visibility.svg" alt="Закрите око">';
+            }
+        }
+
+    </script>
+</body>
+</html>

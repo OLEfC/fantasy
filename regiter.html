@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фентезі УПЛ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="log-container">
+        
+        <div class="left-container">
+            <div class="image-container">
+                <img src="media/vanats.png" alt="">
+
+            </div>
+            <div class="back_image">
+
+            </div>
+
+        </div>
+        <div class="right-container">
+        <span class="hoower-text-main">
+            <span class="hoower-text">
+                Ще не користуєтесь сайтом?
+
+            </span>
+            <a class="hoower-text" href="/register">Створіть новий акаунт</a>
+        </span>            
+            <h1 style="margin-top: 80px;">Вхід</h1>
+            <div class="form-div">
+
+                <form action="" class="form-log">
+                    <input id="log" placeholder="Логін/Пошта" type="text">
+                    <br>
+                    <div class="password-container">
+                        <input id="paswd" placeholder="Пароль" type="password">
+
+                        <div id="show-password" onclick="togglePassword()">
+                            <img src="media/visibility.svg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="forgot-password">
+                        <a class="hoower-text" href="/register">Забули пароль?</a>
+                    </div>
+                
+                    <button type="submit">Увійти</button>
+                </form>
+                
+
+
+            </div>
+            
+
+           
+            
+        </div>
+
+    </div>
+    <script>
+        function togglePassword() {
+    var passwordField = document.getElementById("paswd");
+    var showPasswordButton = document.getElementById("show-password");
+
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        showPasswordButton.innerHTML = '<img src="media/visibilityoff.svg" alt="Відкрите око">';
+    } else {
+        passwordField.type = "password";
+        showPasswordButton.innerHTML = '<img src="media/visibility.svg" alt="Закрите око">';
+    }
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,467 @@
+@font-face {
+    font-family: 'KyivType Titling';
+    src:url('fonts/KyivTypeTitling-Heavy3.woff2') format('woff2'),
+        url('fonts/KyivTypeTitling-Heavy3.woff') format('woff'),
+        url('fonts/KyivTypeTitling-Heavy3.ttf') format('truetype'),
+        url('fonts/KyivTypeTitling-Heavy3.otf') format('opentype');
+    font-weight: 1000;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KyivType Sanse Bold';
+    src:url('fonts/KyivTypeSans-Heavy2.woff2') format('woff2'),
+        url('fonts/KyivTypeSans-Heavy2.woff') format('woff'),
+        url('fonts/KyivTypeSans-Heavy2.ttf') format('truetype'),
+        url('fonts/KyivTypeSans-Heavy2.otf') format('opentype');
+    font-weight: 1000;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KyivType Sanse';
+    src:url('fonts/KyivTypeSans-Medium-.woff2') format('woff2'),
+        url('fonts/KyivTypeSans-Medium-.woff') format('woff'),
+        url('fonts/KyivTypeSans-Medium-.ttf') format('truetype'),
+        url('fonts/KyivTypeSans-Medium-.otf') format('opentype');
+    font-weight: 1000;
+    font-style: normal;
+}
+
+
+
+.password-container {
+    position: relative;
+}
+
+#show-password {
+  
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    top: 25%;
+    right:0;
+
+
+}
+
+#show-password-conf {
+  
+    position: absolute;
+   
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    top: 25%;
+    right:0;
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.left-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Додано для встановлення базового контексту позиціонування */
+}
+.right-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Додано для встановлення базового контексту позиціонування */
+
+}
+
+.left-container-reg {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Додано для встановлення базового контексту позиціонування */
+}
+.right-container-reg{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative; /* Додано для встановлення базового контексту позиціонування */
+
+}
+.left-container-reg h1 {
+    margin: 0px;
+    color: #FFD500;
+
+    font-family: 'KyivType Sanse', sans-serif;
+    font-size: 8vw; /* Змініть це значення відповідно до ваших потреб */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.image-container img {
+    max-width: 200%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.image-container-reg img {
+    max-width: 200%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.back_image {
+    width: 80%;
+    height: 95%;
+    border-radius: 40px;
+    background-color: #00296B;
+    position: absolute;
+    z-index: 1; /* Встановлюємо вищий z-index для back_image */
+}
+.back_image-reg {
+    width: 80%;
+    height: 95%;
+    border-radius: 40px;
+    background-color: #FFD500;
+    position: absolute;
+    z-index: 1; /* Встановлюємо вищий z-index для back_image */
+}
+
+.log-container {
+    display: flex;
+    
+}
+.log-container {
+    background-color: #FFD500;
+    height: 95vh;
+    width: 98vw;
+    border-radius:20px ;
+   
+}
+.reg-container {
+    display: flex;
+    
+}
+.reg-container {
+    background-color: #00296B;
+    height: 95vh;
+    width: 98vw;
+    border-radius:20px ;
+   
+}
+
+.right-container h1 {
+    margin: 0px;
+    color: #00296B;
+    font-family: 'KyivType Sanse', sans-serif;
+    font-size: 8vw; /* Змініть це значення відповідно до ваших потреб */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-log input{
+    font-family: 'KyivType Sanse', sans-serif;
+
+    width: 100%;
+    height: 40px;
+    border-radius: 60px;
+    border: 2px solid rgba(0, 41, 107,0.75);
+    font-size: 25px;
+    padding-left: 10px;
+    background: #FFF;
+    color: rgba(0, 41, 107,0.75);
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+
+}
+.form-log button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 60%;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    border: 1px solid #00296B;
+    background: #00296B;
+    color: #FFD500;
+    font-family: 'KyivType Sanse', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.form-log input::placeholder {
+    color: rgba(0, 41, 107,0.75);
+}
+
+.form-div{
+    width: 50%;
+}
+.form-log{
+    text-align: center;
+}
+
+
+
+
+
+
+.form-log-reg input{
+    font-family: 'KyivType Sanse', sans-serif;
+
+    width: 100%;
+    height: 40px;
+    border-radius: 60px;
+
+    border: 2px solid rgba(0, 41, 107,0.75);
+    font-size: 25px;
+    padding-left: 10px;
+    background: #FFF;
+    color: rgba(0, 41, 107,0.75);
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+
+}
+.form-log-reg select{
+    font-family: 'KyivType Sanse', sans-serif;
+
+    width: 103%;
+    height: 40px;
+    border-radius: 60px;
+
+    border: 2px solid rgba(0, 41, 107,0.75);
+    font-size: 25px;
+    padding-left: 10px;
+    background: #FFF;
+    color: rgba(0, 41, 107,0.75);
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+
+}
+.form-log-reg button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    border: 1px solid #FFD500;
+    background: #FFD500;
+    color: #00296B;
+    font-family: 'KyivType Sanse', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.form-log-reg input::placeholder {
+    color: rgba(0, 41, 107,0.75);
+}
+
+.form-div-reg{
+    width: 50%;
+}
+.form-log-reg{
+    text-align: center;
+}
+
+.hoower-text{
+    font-family: 'KyivType Sanse', sans-serif;
+    color: #00296B;
+    font-size: 19px;
+
+}
+.hoower-text-main{
+    margin-top: 40px;
+    
+
+}
+
+.hoower-text-reg{
+    font-family: 'KyivType Sanse', sans-serif;
+    color: #FFD500;
+    font-size: 19px;
+
+}
+
+
+/* Додано стилі для блоку, що містить текст "Забули пароль?" */
+.forgot-password {
+    width: 100%;
+    text-align: right;
+}
+
+/* головна */
+
+
+
+@font-face {
+    font-family: "KyivTypeSans-Regular";
+    src: url("fonts/KyivTypeSans-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+*{
+    font-family: "KyivTypeSans-Regular";
+}
+
+
+.headline {
+    background-color: #FDC500;
+    color: #00296B;
+    width: 100%;
+  }
+  
+  .headline ul {
+    display: flex;
+    margin: 0;
+  
+  }
+  
+  .headline ul li {
+    font-family: 'Kyiv Type Sans', sans-serif;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .headline ul li img {
+    width: 50px;
+    height: 100px;
+  }
+  .leftnav{
+    list-style-type: none;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    width:50%;
+  
+  }
+
+  .rightnav{
+    list-style-type: none;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end	;
+    width: 50%;
+    float: right;
+  
+  }
+  
+  
+  .logo {
+    max-height: 50px;
+  }
+  
+
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+.pitch{
+    position: relative;
+    width: 40%;
+
+}
+.pitchimg{
+    width: 100%;
+}
+.players{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Додайте цей рядок для центрування тексту по вертикалі і горизонталі */
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.strikers, .midfielders, .defenders, .goalkeepers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.player{
+  width: calc(20% - 20px); 
+    margin: 0px 10px;
+    padding: 2px,5px;
+    text-align: center;
+}
+.playerimg{
+    width: 60%;
+}
+.surname{
+    margin: 0;
+    padding: 5px 10px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    background: #00296B;
+
+}
+.playersmallinfo{
+    width: 100%;
+    margin: 0;
+    background: #FFF;
+    color: #00296B;
+    text-align: center;
+    font-size: 20px;
+}
+.player:hover{ 
+  background-color: #FFF;
+}
+
+@media only screen and (max-width: 600px){
+    .pitch{
+        width: 100%;
+    }
+}
+
+

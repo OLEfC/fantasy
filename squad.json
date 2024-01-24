@@ -1,0 +1,8 @@
+{
+    "strikers":[["playerimg","surname","points"],["playerimg","surname","points"]],
+    "midfielders":[["playerimg","surname","points"],["playerimg","surname","points"]],
+    "defenders":[["playerimg","surname","points"],["playerimg","surname","points"]],
+    "goalkeepers":[["playerimg","surname","points"],["playerimg","surname","points"]],
+    "bench":[["playerimg","surname","points"],["playerimg","surname","points"]]
+
+}

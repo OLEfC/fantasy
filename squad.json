@@ -1,8 +1,19 @@
 {
-    "strikers":[["playerimg","surname","points"],["playerimg","surname","points"]],
-    "midfielders":[["playerimg","surname","points"],["playerimg","surname","points"]],
-    "defenders":[["playerimg","surname","points"],["playerimg","surname","points"]],
-    "goalkeepers":[["playerimg","surname","points"],["playerimg","surname","points"]],
-    "bench":[["playerimg","surname","points"],["playerimg","surname","points"]]
+    "strikers":{
+        "playersinfo":[{"id":1,"playerimg":1,"surname":2,"info":2}]
+    },
+    "midfielders":{
+        "playersinfo":[{"id":1,"playerimg":1,"surname":2,"info":2}]
+    },
+    "defenders":{
+        "playersinfo":[{"id":1,"playerimg":1,"surname":2,"info":2}]
+    },
+    "goalkeepers":{
+        "playersinfo":[{"id":1,"playerimg":1,"surname":2,"info":2}]
+    },
+    "bench":{
+        "playersinfo":[{"id":1,"playerimg":1,"surname":2,"info":2}]
+    }
+    
 
 }

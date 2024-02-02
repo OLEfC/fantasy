@@ -222,21 +222,21 @@
                 <div class="calendar-info">
                     <div class="calendar-btn">
                         <img src="media/prev.svg" alt="">
-                        <p>12-й тур</p>
+                        <p id="tournum" class="tournum">12-й тур</p>
                         <img src="media/next.svg" alt="">
 
                     </div>
                     
 
                 </div>
-                <div class="matchday">
+                <div class="matchday"  id="cal">
                     <div class="day-info">
                         <p>субота, 28.10.2023</p>
 
                     </div>
                     <div class="match-info">
                         <div class="home-team">
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
+                            <img src="media/dynamo.svg" alt="">
                             <p>Кривбас</p>
                         </div>
                         <div class="one-match-info">
@@ -244,118 +244,10 @@
                         </div>
                         <div class="away-team">
                             <p>Дніпро-1</p>
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="match-info">
-                        <div class="home-team">
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                            <p>Кривбас</p>
-                        </div>
-                        <div class="one-match-info">
-                            <p>13:00</p>
-                        </div>
-                        <div class="away-team">
-                            <p>Дніпро-1</p>
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="match-info">
-                        <div class="home-team">
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                            <p>Кривбас</p>
-                        </div>
-                        <div class="one-match-info">
-                            <p>13:00</p>
-                        </div>
-                        <div class="away-team">
-                            <p>Дніпро-1</p>
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
+                            <img src="media/dynamo.svg" alt="">
                         </div>
                     </div>
                     
-
-                </div>
-                <div class="matchday">
-                    <div class="day-info">
-                        <p>субота, 28.10.2023</p>
-
-                    </div>
-                    <div class="match-info">
-                        <div class="home-team">
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                            <p>Металіст-1925</p>
-                        </div>
-                        <div class="one-match-info">
-                            <p>13:00</p>
-                        </div>
-                        <div class="away-team">
-                            <p>Металіст-1925</p>
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="match-info">
-                        <div class="home-team">
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                            <p>Кривбас</p>
-                        </div>
-                        <div class="one-match-info">
-                            <p>13:00</p>
-                        </div>
-                        <div class="away-team">
-                            <p>Дніпро-1</p>
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="match-info">
-                        <div class="home-team">
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                            <p>Кривбас</p>
-                        </div>
-                        <div class="one-match-info">
-                            <p>13:00</p>
-                        </div>
-                        <div class="away-team">
-                            <p>Дніпро-1</p>
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="match-info">
-                        <div class="home-team">
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                            <p>Кривбас</p>
-                        </div>
-                        <div class="one-match-info">
-                            <p>13:00</p>
-                        </div>
-                        <div class="away-team">
-                            <p>Дніпро-1</p>
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                        </div>
-                    </div>
-                   
-
-                </div>
-                <div class="matchday">
-                    <div class="day-info">
-                        <p>Перенесено</p>
-
-                    </div>
-                    <div class="match-info">
-                        <div class="home-team">
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                            <p>Кривбас</p>
-                        </div>
-                        <div class="one-match-info">
-                            <p>-</p>
-                        </div>
-                        <div class="away-team">
-                            <p>Дніпро-1</p>
-                            <img src="media/FC_Dynamo_Kyiv_logo.svg.png" alt="">
-                        </div>
-                    </div>
-                    
-
                 </div>
             </div>
 
@@ -367,9 +259,9 @@
             
             <form class="formsearch" action="">
                 <h1>Пошук гравців</h1>
-            <div class="searchdiv">
+                <div class="searchdiv">
 
-            </div>
+                </div>
             <div class="teamselect">
                 <select name="teamselector" autofocus>
                     <option value="0">Усі команди</option>
@@ -395,7 +287,6 @@
                 <input id="price" type="number"min="0" max="15" value="15" step="0.1">
                 <div class="positionselect">
                     <select name="positionselector" autofocus>
-                        <option disabled="disabled" selected="selected">Оберіть позицію</option>
                         <option value="0">Усі позиції</option>
                         <option value="1">Воротар</option>
                         <option value="2">Захисник</option>
@@ -651,6 +542,7 @@
                         <p>Голкіпери</p>
 
                     </div>
+                    
                     <div class="table-trans-player">
 
                         <div class="first-col-withimg">
@@ -672,90 +564,7 @@
 
 
                     </div>
-                    <div class="table-trans-player">
-
-                        <div class="first-col-withimg">
-                            <img src="Форми/Минай.svg" alt="">
-                        
-                            <p>
-                                БУДКІВСЬКИЙ
-                            </p>
-
-                        </div>
-                        
-                        
-                        <p class="second-col">
-                            4₴
-                        </p>
-                        <p class="third-col">
-                            120
-                        </p>
-
-
-                    </div>
-                    <div class="table-trans-player">
-
-                        <div class="first-col-withimg">
-                            <img src="Форми/Минай.svg" alt="">
-                        
-                            <p>
-                                БУДКІВСЬКИЙ
-                            </p>
-
-                        </div>
-                        
-                        
-                        <p class="second-col">
-                            4₴
-                        </p>
-                        <p class="third-col">
-                            120
-                        </p>
-
-
-                    </div>
-                    <div class="table-trans-player">
-
-                        <div class="first-col-withimg">
-                            <img src="Форми/Минай.svg" alt="">
-                        
-                            <p>
-                                БУДКІВСЬКИЙ
-                            </p>
-
-                        </div>
-                        
-                        
-                        <p class="second-col">
-                            4₴
-                        </p>
-                        <p class="third-col">
-                            120
-                        </p>
-
-
-                    </div>
-                    <div class="table-trans-player">
-
-                        <div class="first-col-withimg">
-                            <img src="Форми/Минай.svg" alt="">
-                        
-                            <p>
-                                БУДКІВСЬКИЙ
-                            </p>
-
-                        </div>
-                        
-                        
-                        <p class="second-col">
-                            4₴
-                        </p>
-                        <p class="third-col">
-                            120
-                        </p>
-
-
-                    </div>
+                    
                     
                     <div class="table-trans-footer">
                         <div class="cont-footer">
@@ -801,5 +610,7 @@
 
     
     <script src="transfer.js"></script>
+    <script src="calendar.js"></script>
+
 </body>
 </html>
